@@ -1,0 +1,20 @@
+.tool-hero {
+  padding: 1.25rem 1.5rem;
+  margin: 1rem 0 1.5rem;
+  border-radius: 0.9rem;
+  background: linear-gradient(135deg, rgba(63, 81, 181, 0.10), rgba(255, 112, 67, 0.10));
+  border: 1px solid rgba(127, 127, 127, 0.18);
+}
+
+.md-typeset table:not([class]) {
+  font-size: 0.78rem;
+}
+
+.md-typeset h2 {
+  margin-top: 2.2rem;
+}
+
+.md-button {
+  margin-right: 0.5rem;
+}
+

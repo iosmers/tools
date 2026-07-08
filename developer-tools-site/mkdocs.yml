@@ -1,0 +1,91 @@
+site_name: Mac 开发效率工具箱
+site_description: 面向 Mac 程序员的终端、文件、网络、系统、Git、容器、数据库、自动化、文档与 AI 开发工具大全
+repo_url: https://github.com/iosmers/tools
+repo_name: iosmers/tools
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.expand
+    - navigation.top
+    - toc.follow
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: 切换到深色模式
+    - scheme: slate
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到浅色模式
+
+nav:
+  - 首页: index.md
+  - 快速总览: tools.md
+  - 工具百科:
+      - 百科索引: categories/index.md
+      - 终端生态:
+          - GUI 终端模拟器: categories/terminal-emulators.md
+          - Shell、提示符、补全与历史: categories/shell.md
+          - 现代 Unix / CLI 替代工具: categories/modern-cli.md
+          - 终端文件管理器: categories/tui-file-managers.md
+      - 文件、存储与磁盘:
+          - GUI 文件管理器与同步: categories/files-storage.md
+          - 压缩、磁盘清理、备份: categories/disk-backup.md
+      - 网络、远程与云:
+          - 网络调试、抓包、代理与隧道: categories/network-debugging.md
+          - SSH、远程连接与云服务器: categories/ssh-cloud.md
+      - Mac 系统效率:
+          - 系统资源监控与安全排障: categories/system-monitoring.md
+          - 窗口、桌面、启动器: categories/window-desktop.md
+          - 剪贴板与输入增强: categories/clipboard-input.md
+          - Mac 系统维护: categories/mac-maintenance.md
+      - 代码开发核心:
+          - 编辑器、IDE 与 AI 编程: categories/editors-ide-ai.md
+          - Git、代码评审与版本控制: categories/git-review.md
+          - 代码质量、测试、性能与安全扫描: categories/code-quality.md
+      - 基础设施与数据:
+          - 容器、虚拟化与 Kubernetes: categories/containers-kubernetes.md
+          - 数据库、缓存和数据客户端: categories/databases.md
+      - 安全、自动化与环境:
+          - 密码、密钥、证书与安全: categories/secrets-security.md
+          - 自动化、脚本和工作流: categories/automation.md
+          - 包管理、语言版本与项目环境: categories/package-env.md
+      - 文档、媒体、前端与 AI:
+          - 笔记、文档、知识库与图表: categories/docs-knowledge.md
+          - 截图、录屏、图片和媒体处理: categories/media.md
+          - 前端、浏览器与 Web 调试: categories/web-frontend.md
+          - AI / LLM 本地开发: categories/ai-llm.md
+      - 角色与维护:
+          - 按角色推荐: categories/roles.md
+          - 维护路线与候选方向: categories/maintenance.md
+  - 项目计划: plan.md
+  - 部署指南: deploy.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_css:
+  - stylesheets/extra.css
